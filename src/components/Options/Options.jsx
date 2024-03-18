@@ -1,12 +1,12 @@
 
 
-const Options = () => {
+const Options = ({handleLogCoffee}) => {
   return (
       <div>
-          <button>Good</button>
-          <button>Neutral</button>
-          <button>Bad</button>
-          <button>Reset</button>
+          <button onClick={() => handleLogCoffee("Good")}>Good</button>
+          <button onClick={() => handleLogCoffee("Neutral")}>Neutral</button>
+          <button onClick={() => handleLogCoffee("Bad")}>Bad</button>
+          <button onClick={() => handleLogCoffee("Reset")}>Reset</button>
     </div>
   )
 }

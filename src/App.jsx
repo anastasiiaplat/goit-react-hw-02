@@ -6,13 +6,13 @@ import Options from './components/Options/Options'
 
 function App() {
 
-  const handleLogCoffee = (coffeeType) => {
-    console.log("coffeeType", coffeeType);
+  const handleLogCoffee = (coffeeRating) => {
+    console.log("coffeeRating", coffeeRating);
   };
 
   <div>
     
-    <Options />
+    <Options handleLogCoffee={handleLogCoffee} />
     <Feedback />
     <Description/>
 
